@@ -1,0 +1,61 @@
+{
+  "google-oauth2|110452211980305970769": {
+    "schema": "budgeteer.profile",
+    "version": 1,
+    "updatedAt": "2025-10-05T13:40:37.395Z",
+    "user": {
+      "id": "google-oauth2|110452211980305970769",
+      "email": "chiurickey@gmail.com"
+    },
+    "meta": {
+      "completed": true
+    },
+    "survey": {
+      "goals": [
+        "cut_spending"
+      ],
+      "focus_categories": [
+        "transport",
+        "entertainment"
+      ],
+      "nudges": [
+        "merchant_insights"
+      ],
+      "time_horizon": [
+        "quarter"
+      ]
+    },
+    "userId": "google-oauth2|110452211980305970769"
+  },
+  "google-oauth2|115099994971713157235": {
+    "schema": "budgeteer.profile",
+    "version": 1,
+    "updatedAt": "2025-10-05T17:47:27.133Z",
+    "user": {
+      "id": "google-oauth2|115099994971713157235",
+      "email": "lkrahman08@gmail.com"
+    },
+    "meta": {
+      "completed": true
+    },
+    "survey": {
+      "goals": [
+        "stick_budget",
+        "track_subs"
+      ],
+      "focus_categories": [
+        "shopping",
+        "entertainment",
+        "transport"
+      ],
+      "nudges": [
+        "roundup_savings",
+        "weekly_summary"
+      ],
+      "time_horizon": [
+        "this_month"
+      ]
+    },
+    "userId": "google-oauth2|115099994971713157235"
+  }
+}
