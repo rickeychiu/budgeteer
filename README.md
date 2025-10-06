@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# 💰 Budgeteer — DivHacks 2025 Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Budgeteer is a web application designed to help users track, visualize, and optimize their personal finances.
+Built during **DivHacks 2025**, the project combines AI-assisted summaries with interactive budgeting tools to make financial literacy accessible and engaging.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+* 📊 **Dynamic Budget Dashboard** — Real-time income and expense tracking
+* 💬 **AI-Powered Financial Insights** — Uses the OpenAI API to generate spending summaries and recommendations
+* 🧠 **Personalized Insights** — Summarizes transaction history and suggests savings patterns
+* 🧩 **User Authentication** — Secure sign-in flow with Auth0
+* 🎨 **Modern UI/UX** — Built with React, Tailwind CSS, and Chart.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+| Category            | Technologies                  |
+| ------------------- | ----------------------------- |
+| **Frontend**        | React, Tailwind CSS           |
+| **Backend**         | Node.js, Express              |
+| **AI Integration**  | OpenAI API                    |
+| **Auth**            | Auth0                         |
+| **Database**        | (Optional) MongoDB / Firebase |
+| **Version Control** | Git + GitHub                  |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Local Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
+   git clone [https://github.com/rickeychiu/budgeteer.git](https://github.com/rickeychiu/budgeteer.git)
+   cd budgeteer
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies:**
+   npm install
+   cd server && npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Set up your environment variables:**
 
-### `npm run eject`
+   Create a `.env` file in the `/server` directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```
+   OPENAI_API_KEY=your_openai_key_here
+   AUTH0_CLIENT_ID=your_auth0_client_id
+   AUTH0_SECRET=your_auth0_secret
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ⚠️ **Do not commit this file.**
+   `.env` is already listed in `.gitignore` to prevent secrets from being uploaded.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Start the app:**
+   npm run dev
+   The development server will start at **[http://localhost:3000](http://localhost:3000)**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🧹 Note on API Keys & Security
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+During initial development, API keys were accidentally committed in a local `.env` file.
+These have been **redacted and removed from Git history** — GitHub’s push protection automatically blocked the push before any data was exposed.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Steps taken:
 
-### Code Splitting
+* `.env` added to `.gitignore`
+* All keys replaced with `REDACTED`
+* Old API keys revoked and regenerated
+* Repository cleaned and re-pushed safely
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+For future development:
+Keep all environment variables in a local `.env` file only — **never commit secrets** to version control.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 👥 Contributors
 
-### Making a Progressive Web App
+**Rickey Chiu** — Frontend, AI Integration, UI Design
+**Ashley Hong & Layth Rahman** — Backend & Authentication
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project was created for **DivHacks 2025** and is intended for educational and demonstration purposes.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 💡 Future Improvements
 
-### `npm run build` fails to minify
+* Add persistent user data storage (MongoDB or Firebase)
+* Implement advanced financial forecasting models
+* Enhance AI interpretability and feedback explanations
+* Deploy production build with CI/CD and SSL
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
