@@ -71,7 +71,7 @@ This project fully complies with **Capital One’s API usage policies** and **Op
 ## 👥 Contributors
 
 * **Rickey Chiu** — Frontend Development, AI Integration, UI Design
-* *(DivHacks teammates)* — Backend Integration, Capital One API, Authentication
+* **Ashley Hong, Layth Rahman, Zurabi Kochiashvili** — Backend Integration, Capital One API, Authentication
 
 ---
 
